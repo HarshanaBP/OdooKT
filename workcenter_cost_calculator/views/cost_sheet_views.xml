@@ -9,7 +9,7 @@
                     <group>
                         <group>
                             <field name="name"/>
-                            <field name="date_field"/>
+                            <field name="date_field" string="Date"/>
                         </group>
                     </group>
                     <notebook>
@@ -45,7 +45,7 @@
         <field name="arch" type="xml">
             <tree string="Cost Sheets">
                 <field name="name"/>
-                <field name="date_field"/>
+                <field name="date_field" string="Date"/>
                 <field name="total_cost"/>
             </tree>
         </field>
@@ -58,7 +58,7 @@
         <field name="arch" type="xml">
             <kanban>
                 <field name="name"/>
-                <field name="date_field"/>
+                <field name="date_field" string="Date"/>
                 <field name="total_cost"/>
                 <templates>
                     <t t-name="kanban-box">
