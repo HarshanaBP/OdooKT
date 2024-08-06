@@ -9,7 +9,7 @@
                     <group>
                         <group>
                             <field name="name"/>
-                            <field name="date_field" string="Date"/>
+                            <field name="date_field"/>
                         </group>
                     </group>
                     <notebook>
@@ -45,7 +45,7 @@
         <field name="arch" type="xml">
             <tree string="Cost Sheets">
                 <field name="name"/>
-                <field name="date_field" string="Date"/>
+                <field name="date_field"/>
                 <field name="total_cost"/>
             </tree>
         </field>
@@ -58,7 +58,7 @@
         <field name="arch" type="xml">
             <kanban>
                 <field name="name"/>
-                <field name="date_field" string="Date"/>
+                <field name="date_field"/>
                 <field name="total_cost"/>
                 <templates>
                     <t t-name="kanban-box">
@@ -89,7 +89,7 @@
     <record id="action_cost_sheet_view" model="ir.actions.act_window">
         <field name="name">Cost Sheets</field>
         <field name="res_model">cost.sheet</field>
-        <field name="view_mode">tree,form,kanban,calendar</field>
+        <field name="view_mode">form,tree,kanban,calendar</field>
     </record>
 
     <!-- Menus -->
