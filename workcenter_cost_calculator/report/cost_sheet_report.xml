@@ -1,0 +1,13 @@
+<odoo>
+    <!-- Cost Sheet Report Action -->
+    <record id="action_report_cost_sheet" model="ir.actions.report">
+        <field name="name">Cost Sheet Report</field>
+        <field name="model">cost.sheet</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">workcenter_cost_calculator.report_cost_sheet_document</field>
+        <field name="report_file">workcenter_cost_calculator.report_cost_sheet_document</field>
+        <field name="binding_model_id" ref="model_cost_sheet"/>
+        <field name="binding_type">report</field>
+        <field name="paperformat_id" ref="workcenter_cost_calculator.paperformat_cost_sheet"/>
+    </record>
+</odoo>

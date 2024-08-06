@@ -1,0 +1,54 @@
+<odoo noupdate="1">
+    <!-- Form View -->
+    <record id="view_work_center_form" model="ir.ui.view">
+        <field name="name">work.center.form</field>
+        <field name="model">work.center</field>
+        <field name="arch" type="xml">
+            <form string="Work Center">
+                <group>
+                    <field name="name"/>
+                    <field name="hourly_cost"/>
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <!-- Tree View -->
+    <record id="view_work_center_tree" model="ir.ui.view">
+        <field name="name">work.center.tree</field>
+        <field name="model">work.center</field>
+        <field name="arch" type="xml">
+            <tree string="Work Centers">
+                <field name="name"/>
+                <field name="hourly_cost"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Action -->
+    <record id="action_work_center_view" model="ir.actions.act_window">
+        <field name="name">Work Centers</field>
+        <field name="res_model">work.center</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Menus -->
+    <!--<menuitem id="menu_main_work_center"
+              name="Work Centers"
+              sequence="10"/>-->
+    <!-- Define Parent Menu -->
+    <menuitem id="menu_main_cost_sheet"
+              name="Cost Sheets"
+              sequence="10"/>
+
+    <menuitem id="menu_main_cost_sheet_line"
+              name="Cost Sheets Line"
+              parent="menu_main_cost_sheet"
+              sequence="20"/>
+
+    <menuitem id="menu_work_center"
+              name="Work Centers"
+              parent="menu_main_cost_sheet_line"
+              action="action_work_center_view"
+              sequence="1"/>
+</odoo>

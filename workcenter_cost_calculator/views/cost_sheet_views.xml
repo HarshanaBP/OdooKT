@@ -1,0 +1,76 @@
+<odoo noupdate="1">
+    <!-- Form View -->
+    <record id="view_cost_sheet_form" model="ir.ui.view">
+        <field name="name">cost.sheet.form</field>
+        <field name="model">cost.sheet</field>
+        <field name="arch" type="xml">
+            <form string="Cost Sheet">
+                <group>
+                    <field name="name"/>
+                    <field name="total_cost" readonly="1"/>
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <!-- Tree View -->
+    <record id="view_cost_sheet_tree" model="ir.ui.view">
+        <field name="name">cost.sheet.tree</field>
+        <field name="model">cost.sheet</field>
+        <field name="arch" type="xml">
+            <tree string="Cost Sheets">
+                <field name="name"/>
+                <field name="total_cost"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Kanban View -->
+    <record id="view_cost_sheet_kanban" model="ir.ui.view">
+        <field name="name">cost.sheet.kanban</field>
+        <field name="model">cost.sheet</field>
+        <field name="arch" type="xml">
+            <kanban>
+                <field name="name"/>
+                <field name="total_cost"/>
+                <templates>
+                    <t t-name="kanban-box">
+                        <div t-attf-class="oe_kanban_card">
+                            <strong><field name="name"/></strong>
+                            <div><field name="total_cost"/></div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+    <!-- Calendar View -->
+    <record id="view_cost_sheet_calendar" model="ir.ui.view">
+        <field name="name">cost.sheet.calendar</field>
+        <field name="model">cost.sheet</field>
+        <field name="arch" type="xml">
+            <calendar string="Cost Sheets" date_start="date_field">
+                <field name="name"/>
+            </calendar>
+        </field>
+    </record>
+
+    <!-- Action -->
+    <record id="action_cost_sheet_view" model="ir.actions.act_window">
+        <field name="name">Cost Sheets</field>
+        <field name="res_model">cost.sheet</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Menus -->
+    <!--<menuitem id="menu_main_cost_sheet"
+              name="Cost Sheets"
+              sequence="10"/>-->
+
+    <menuitem id="menu_cost_sheet"
+              name="Cost Sheets"
+              parent="menu_main_cost_sheet_line"
+              action="action_cost_sheet_view"
+              sequence="1"/>
+</odoo>

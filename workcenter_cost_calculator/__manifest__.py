@@ -1,0 +1,23 @@
+{
+    'name': 'Work Center Cost Calculator',
+    'version': '1.0',
+    'summary': 'Module to calculate costs in work centers',
+    'description': 'Detailed description of the work center cost calculator module.',
+    'category': 'Operations',
+    'author': 'Malinda Gamage',
+    'website': 'https://calculatecost.com',
+    'depends': ['base'],
+    'data': [
+        'views/work_center_views.xml',
+        'views/cost_sheet_views.xml',
+        'views/cost_sheet_line_views.xml',
+        'security/ir.model.access.csv',
+        'report/paperformat_cost_sheet.xml',
+        'report/cost_sheet_report_template.xml',
+        'report/cost_sheet_report.xml',
+    ],
+    'demo': [],
+    'installable': True,
+    'application': False,
+    'license': 'LGPL-3',
+}

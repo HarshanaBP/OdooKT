@@ -1,0 +1,49 @@
+<odoo noupdate="1">
+    <!-- Form View -->
+    <record id="view_cost_sheet_line_form" model="ir.ui.view">
+        <field name="name">cost.sheet.line.form</field>
+        <field name="model">cost.sheet.line</field>
+        <field name="arch" type="xml">
+            <form string="Cost Sheet Line">
+                <group>
+                    <field name="cost_sheet_id"/>
+                    <field name="work_center_id"/>
+                    <field name="hours_spent"/>
+                    <field name="subtotal" readonly="1"/>
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <!-- Tree View -->
+    <record id="view_cost_sheet_line_tree" model="ir.ui.view">
+        <field name="name">cost.sheet.line.tree</field>
+        <field name="model">cost.sheet.line</field>
+        <field name="arch" type="xml">
+            <tree string="Cost Sheet Lines">
+                <field name="cost_sheet_id"/>
+                <field name="work_center_id"/>
+                <field name="hours_spent"/>
+                <field name="subtotal"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Action -->
+    <record id="action_cost_sheet_line_view" model="ir.actions.act_window">
+        <field name="name">Cost Sheet Lines</field>
+        <field name="res_model">cost.sheet.line</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Menus -->
+    <menuitem id="menu_main_cost_sheet_line"
+              name="Workcenter Cost Calculator"
+              sequence="10"/>
+
+    <menuitem id="menu_cost_sheet_line"
+              name="Cost Sheet Lines"
+              parent="menu_main_cost_sheet_line"
+              action="action_cost_sheet_line_view"
+              sequence="1"/>
+</odoo>
