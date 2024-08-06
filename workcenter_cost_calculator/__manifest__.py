@@ -2,7 +2,7 @@
     'name': 'Work Center Cost Calculator',
     'version': '1.0',
     'summary': 'Module to calculate costs in work centers',
-    'description': 'Detailed dmjbhjescription of the work center cost calculator module.',
+    'description': 'Detailed description of the work center cost calculator module.   ',
     'category': 'Operations',
     'author': 'Malinda Gamage',
     'website': 'https://calculatecost.com',
