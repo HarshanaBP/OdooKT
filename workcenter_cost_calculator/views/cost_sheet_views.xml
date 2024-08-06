@@ -93,9 +93,9 @@
     </record>
 
     <!-- Menus -->
-    <menuitem id="menu_cost_sheet"
+    <!--<menuitem id="menu_cost_sheet"
               name="Cost Sheets"
               parent="menu_main_cost_sheet_line"
               action="action_cost_sheet_view"
-              sequence="1"/>
+              sequence="1"/>-->
 </odoo>

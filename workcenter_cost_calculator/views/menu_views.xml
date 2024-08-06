@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Main Menu -->
+    <menuitem id="workcenter_menu_root"
+              name="Workcenter Cost Calculator"
+              sequence="10"/>
+
+    <!-- Work Centers Menu -->
+    <menuitem id="workcenter_menu_work_centers"
+              name="Work Centers"
+              parent="workcenter_menu_root"
+              action="action_work_center_view"
+              sequence="1"/>
+
+    <!-- Cost Sheets Menu -->
+    <menuitem id="workcenter_menu_cost_sheets"
+              name="Cost Sheets"
+              parent="workcenter_menu_root"
+              action="action_cost_sheet_view"
+              sequence="2"/>
+
+    <!-- Cost Sheet Lines Menu -->
+    <menuitem id="workcenter_menu_cost_sheet_lines"
+              name="Cost Sheet Lines"
+              parent="workcenter_menu_root"
+              action="action_cost_sheet_line_view"
+              sequence="3"/>
+</odoo>

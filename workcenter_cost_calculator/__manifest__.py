@@ -8,6 +8,7 @@
     'website': 'https://calculatecost.com',
     'depends': ['base'],
     'data': [
+        'views/menu_views.xml',
         'views/cost_sheet_views.xml',
         'views/work_center_views.xml',
         'views/cost_sheet_line_views.xml',

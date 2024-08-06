@@ -37,7 +37,7 @@
     </record>
 
     <!-- Menus -->
-    <menuitem id="menu_main_cost_sheet_line"
+    <!--<menuitem id="menu_main_cost_sheet_line"
               name="Workcenter Cost Calculator"
               sequence="10"/>
 
@@ -45,5 +45,5 @@
               name="Cost Sheet Lines"
               parent="menu_main_cost_sheet_line"
               action="action_cost_sheet_line_view"
-              sequence="1"/>
+              sequence="1"/>-->
 </odoo>
