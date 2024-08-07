@@ -13,13 +13,6 @@
                         </group>
                     </group>
                     <notebook>
-                        <page string="General Information">
-                            <group>
-                                <group>
-                                    <field name="total_cost" readonly="1"/>
-                                </group>
-                            </group>
-                        </page>
                         <page string="Lines">
                             <field name="line_ids">
                                 <tree editable="bottom">
@@ -29,10 +22,18 @@
                                 </tree>
                             </field>
                         </page>
-                        <!-- <page string="Description">
-                            <field name="description"/>
-                        </page> -->
+                        <page string="General Information">
+                            <group>
+                                <group>
+                                    <!-- <field name="total_cost" readonly="1"/> -->
+                                </group>
+                            </group>
+                        </page>
                     </notebook>
+                    <div class="oe_title">
+                        <label for="total_cost" string="Total Cost ="/>
+                        <span><field name="total_cost" readonly="1"/></span>
+                    </div>
                 </sheet>
             </form>
         </field>
