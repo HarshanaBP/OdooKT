@@ -36,6 +36,7 @@
         <field name="view_mode">tree,form</field>
     </record>
 
+
     <!-- Menus -->
     <menuitem id="menu_main_cost_sheet_line"
               name="Workcenter Cost Calculator"
