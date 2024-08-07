@@ -17,6 +17,11 @@
         'report/cost_sheet_report_template.xml',
         'report/cost_sheet_report.xml',
     ],
+    'assets': {
+        'web.assets_backend': [
+            '/workcenter_cost_calculator/static/src/css/custom_style.css',
+        ],
+    },
     'demo': [],
     'installable': True,
     'application': False,
