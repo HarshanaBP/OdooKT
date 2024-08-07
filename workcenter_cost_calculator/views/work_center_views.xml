@@ -26,18 +26,18 @@
     </record>
 
     <!-- Action -->
-    <record id="action_work_center_view" model="ir.actions.act_window">
+    <!-- <record id="action_work_center_view" model="ir.actions.act_window">
         <field name="name">Work Centers</field>
         <field name="res_model">work.center</field>
         <field name="view_mode">tree,form</field>
-    </record>
+    </record> -->
 
     <!-- Menus -->
     <!--<menuitem id="menu_main_work_center"
               name="Work Centers"
               sequence="10"/>-->
     <!-- Define Parent Menu -->
-    <menuitem id="menu_main_cost_sheet"
+    <!--<menuitem id="menu_main_cost_sheet"
               name="Cost Sheets"
               sequence="10"/>
 
@@ -50,5 +50,5 @@
               name="Work Centers"
               parent="menu_main_cost_sheet_line"
               action="action_work_center_view"
-              sequence="1"/>
+              sequence="1"/>-->
 </odoo>

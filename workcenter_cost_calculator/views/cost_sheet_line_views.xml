@@ -30,15 +30,14 @@
     </record>
 
     <!-- Action -->
-    <record id="action_cost_sheet_line_view" model="ir.actions.act_window">
+    <!-- <record id="action_cost_sheet_line_view" model="ir.actions.act_window">
         <field name="name">Cost Sheet Lines</field>
         <field name="res_model">cost.sheet.line</field>
         <field name="view_mode">tree,form</field>
-    </record>
-
+    </record> -->
 
     <!-- Menus -->
-    <menuitem id="menu_main_cost_sheet_line"
+    <!--<menuitem id="menu_main_cost_sheet_line"
               name="Workcenter Cost Calculator"
               sequence="10"/>
 
@@ -46,5 +45,5 @@
               name="Cost Sheet Lines"
               parent="menu_main_cost_sheet_line"
               action="action_cost_sheet_line_view"
-              sequence="1"/>
+              sequence="1"/>-->
 </odoo>

@@ -40,8 +40,6 @@
                             </t>
                         </tbody>
                     </table>
-                    <div class="section-title">Description</div>
-                    <p t-esc="doc.description"/>
                 </div>
             </t>
         </t>
