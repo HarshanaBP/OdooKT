@@ -16,6 +16,7 @@
         'report/paperformat_cost_sheet.xml',
         'report/cost_sheet_report_template.xml',
         'report/cost_sheet_report.xml',
+        'views/assets.xml',
     ],
     'assets': {
         'web.assets_backend': [
@@ -26,4 +27,10 @@
     'installable': True,
     'application': False,
     'license': 'LGPL-3',
+    'external_dependencies': {
+        'python': ['json'],
+    },
+    'controllers': [
+        'workcenter_cost_calculator.controllers.cost_sheet_controller'
+    ],
 }

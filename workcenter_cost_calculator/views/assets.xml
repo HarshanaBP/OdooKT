@@ -1,0 +1,15 @@
+<!-- <odoo>
+    <template id="assets_backend" name="workcenter_cost_calculator assets" inherit_id="web.assets_backend">
+        <xpath expr="." position="inside">
+            <link rel="stylesheet" type="text/css" href="/workcenter_cost_calculator/static/src/css/custom_style.css"/>
+        </xpath>
+    </template>
+</odoo> -->
+<odoo>
+    <template id="workcenter_cost_calculator_assets" name="workcenter_cost_calculator assets">
+        <xpath expr="." position="inside">
+            <link rel="stylesheet" type="text/css" href="/workcenter_cost_calculator/static/src/css/custom_style.css"/>
+        </xpath>
+    </template>
+</odoo>
+
