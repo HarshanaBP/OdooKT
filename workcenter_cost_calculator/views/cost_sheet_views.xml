@@ -1,5 +1,5 @@
 <odoo noupdate="1">
-    <!-- Form View -->
+     <!-- Form View -->
     <record id="view_cost_sheet_form" model="ir.ui.view">
         <field name="name">cost.sheet.form</field>
         <field name="model">cost.sheet</field>
@@ -24,15 +24,16 @@
                         </page>
                         <page string="General Information">
                             <group>
-                                <group>
-                                    <!-- <field name="total_cost" readonly="1"/> -->
-                                </group>
+                                <!-- Remove the duplicated total cost field here if not necessary -->
                             </group>
                         </page>
                     </notebook>
-                    <div class="oe_title">
-                        <label for="total_cost" string="Total Cost ="/>
-                        <span><field name="total_cost" readonly="1"/></span>
+                    <!-- Display Total Cost at the Bottom -->
+                    <div class="total_cost_summary" style="text-align: right; margin-top: 10px; border-top: 1px solid #ddd; padding-top: 10px;">
+                        <div class="cost_line">
+                            <span class="label">Total Cost:</span>
+                            <span class="value"><field name="total_cost" readonly="1"/></span>
+                        </div>
                     </div>
                 </sheet>
             </form>
