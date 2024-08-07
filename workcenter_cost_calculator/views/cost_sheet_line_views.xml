@@ -1,4 +1,4 @@
-<odoo noupdate="1">
+<odoo>
     <!-- Form View -->
     <record id="view_cost_sheet_line_form" model="ir.ui.view">
         <field name="name">cost.sheet.line.form</field>

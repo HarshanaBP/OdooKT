@@ -1,4 +1,4 @@
-<odoo noupdate="1">
+<odoo>
     <record id="paperformat_cost_sheet" model="report.paperformat">
         <field name="name">Cost Sheet Custom Format</field>
         <field name="default" eval="False"/>
