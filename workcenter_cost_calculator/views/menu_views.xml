@@ -5,6 +5,13 @@
               name="Workcenter Cost Calculator"
               sequence="10"/>
 
+    <!-- Action -->
+    <record id="action_work_center_view" model="ir.actions.act_window">
+        <field name="name">Work Centers</field>
+        <field name="res_model">work.center</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
     <!-- Work Centers Menu -->
     <menuitem id="workcenter_menu_work_centers"
               name="Work Centers"
@@ -12,17 +19,32 @@
               action="action_work_center_view"
               sequence="1"/>
 
+    <!-- Action -->
+    <record id="action_cost_sheet_view" model="ir.actions.act_window">
+        <field name="name">Cost Sheets</field>
+        <field name="res_model">cost.sheet</field>
+        <field name="view_mode">tree,form,kanban,calendar</field>
+    </record>
+
     <!-- Cost Sheets Menu -->
     <menuitem id="workcenter_menu_cost_sheets"
               name="Cost Sheets"
               parent="workcenter_menu_root"
-              action="action_cost_sheet_view"
+              action="workcenter_cost_calculator.action_cost_sheet_view"
               sequence="2"/>
+
+    <!-- Action -->
+    <record id="action_cost_sheet_line_view" model="ir.actions.act_window">
+        <field name="name">Cost Sheet Lines</field>
+        <field name="res_model">cost.sheet.line</field>
+        <field name="view_mode">tree,form</field>
+    </record>
 
     <!-- Cost Sheet Lines Menu -->
     <menuitem id="workcenter_menu_cost_sheet_lines"
               name="Cost Sheet Lines"
               parent="workcenter_menu_root"
-              action="action_cost_sheet_line_view"
+              action="workcenter_cost_calculator.action_cost_sheet_line_view"
               sequence="3"/>
+
 </odoo>
