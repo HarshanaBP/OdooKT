@@ -30,7 +30,8 @@
     'external_dependencies': {
         'python': ['json'],
     },
-    'controllers': [
-        'workcenter_cost_calculator.controllers.cost_sheet_controller'
-    ],
+    # 'controllers': [
+    #     'workcenter_cost_calculator.controllers.cost_sheet_controller',
+    #     'workcenter_cost_calculator.controllers.pos_controller',
+    # ],
 }
