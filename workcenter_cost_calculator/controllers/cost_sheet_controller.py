@@ -1,5 +1,3 @@
-# workcenter_cost_calculator/controllers/cost_sheet_controller.py
-
 from odoo import http
 from odoo.http import request
 import json
