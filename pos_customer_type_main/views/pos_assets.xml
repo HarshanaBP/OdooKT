@@ -1,0 +1,9 @@
+<odoo>
+    <template id="customer_type_selection_assets" name="pos_customer_type_main assets">
+        <xpath expr="." position="inside">
+            <script type="text/javascript" src="/pos_customer_type_main/static/src/js/customer_type_button.js"/>
+            <script type="text/javascript" src="/pos_customer_type_main/static/src/js/customer_type_popup.js"/>
+            <link rel="stylesheet" href="/pos_customer_type_main/static/src/css/customer_type_button.css"/>
+        </xpath>
+    </template>
+</odoo>

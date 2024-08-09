@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <templates id="template" xml:space="preserve">
+        <t t-name="CustomerTypeButton">
+            <button class="control-button btn btn-light rounded-0 fw-bolder" t-on-click="onClick">
+                <i class="fa fa-pencil-square" role="img" aria-label="Select Customer Type" title="Select Customer Type"/>
+                <span> </span>
+                <span>Select Customer Type</span>
+            </button>
+        </t>
+
+        <t t-name="CustomerTypePopup" owl="1">
+            <div class="popup">
+                <div class="popup-content">
+                    <h3>Select Customer Type</h3>
+                    <select id="customer_type">
+                        <option value="local">Local</option>
+                        <option value="europe">Europe</option>
+                        <option value="asian">Asian</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <button type="button" t-on-click="saveCustomerType">Save</button>
+                </div>
+            </div>
+        </t>
+    </templates>
+</odoo>
